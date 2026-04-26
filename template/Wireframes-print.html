@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Wireframes — Bibliothèque Émotionnelle (Print)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #d8c4a8; font-family: 'Inter', -apple-system, sans-serif; color: #3d2c1d; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  * { box-sizing: border-box; }
+
+  .print-page {
+    width: 1280px;
+    padding: 36px 40px 28px;
+    margin: 20px auto;
+    background: #f5ede0;
+    page-break-after: always;
+    break-after: page;
+    break-inside: avoid;
+  }
+  .print-page:last-child { page-break-after: auto; break-after: auto; }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c9b69a;
+  }
+  .page-header .section {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 24px;
+    color: #3d2c1d;
+    letter-spacing: -0.3px;
+  }
+  .page-header .variant {
+    font-size: 13px;
+    color: #8a7560;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+  }
+  .page-header .meta {
+    font-size: 11px;
+    color: #8a7560;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .artboard-wrap {
+    width: 1200px;
+    height: 780px;
+    margin: 0 auto;
+    border: 1px solid #c9b69a;
+    overflow: hidden;
+    background: #f5ede0;
+  }
+
+  @page { size: 1360px 900px; margin: 0; }
+
+  @media print {
+    html, body { background: #f5ede0; }
+    .print-page { margin: 0; padding: 30px 40px 20px; background: #f5ede0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="wireframes.jsx"></script>
+<script type="text/babel" src="screens-landing.jsx"></script>
+<script type="text/babel" src="screens-question.jsx"></script>
+<script type="text/babel" src="screens-explore.jsx"></script>
+<script type="text/babel" src="screens-situation.jsx"></script>
+<script type="text/babel" src="screens-results.jsx"></script>
+<script type="text/babel" src="screens-book.jsx"></script>
+<script type="text/babel" src="screens-profile.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+// Print only the B variants (the chosen direction)
+function PrintApp() {
+  const pages = [
+    { section: '1 · Accueil / Landing', variant: 'B — Type XXL centré', Comp: LandingB, key: 'landing-B' },
+    { section: '2 · Que veux-tu ressentir ?', variant: 'B — Grille 3×3 tonale', Comp: QuestionB, key: 'question-B' },
+    { section: '3 · Explorer par émotion', variant: 'B — Sidebar 6 familles', Comp: ExploreEmoB, key: 'explore-B' },
+    { section: '4 · Explorer par situation', variant: 'B — Liste éditoriale numérotée', Comp: SituationB, key: 'situation-B' },
+    { section: '5 · Résultats', variant: 'B — Liste dense comparateur', Comp: ResultsB, key: 'results-B' },
+    { section: '6 · Fiche livre', variant: 'B — Empreinte tonale', Comp: BookB, key: 'book-B' },
+    { section: '7 · Profil / Ma liste', variant: 'B — Paysage émotionnel', Comp: ProfileB, key: 'profile-B' },
+  ];
+
+  return (
+    <>
+      {pages.map((p, i) => (
+        <div className="print-page" key={p.key}>
+          <div className="page-header">
+            <div>
+              <div className="section">{p.section}</div>
+              <div className="variant">{p.variant}</div>
+            </div>
+            <div className="meta">Bibliothèque Émotionnelle · {i + 1}/{pages.length}</div>
+          </div>
+          <div className="artboard-wrap">
+            <p.Comp />
+          </div>
+        </div>
+      ))}
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('app')).render(<PrintApp />);
+
+// Auto-print once fonts + JSX render + images settle
+(async () => {
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch (e) {}
+  // Wait for all <img> and CSS background images to finish loading
+  await new Promise(r => setTimeout(r, 2500));
+  // Belt-and-braces: wait for any remaining img tags
+  const imgs = Array.from(document.images || []);
+  await Promise.all(imgs.map(img => img.complete ? null : new Promise(res => { img.onload = img.onerror = res; })));
+  await new Promise(r => setTimeout(r, 600));
+  window.print();
+})();
+</script>
+</body>
+</html>

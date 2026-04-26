@@ -1,0 +1,32 @@
+{
+  "isbn13": "9798570069893",
+  "isbn10": null,
+  "slug": "l-etranger-camus",
+  "title": "L'étranger",
+  "authors": [
+    "Albert Camus"
+  ],
+  "originalLanguage": "fr",
+  "publishedYear": 2020,
+  "publisher": "Independently Published",
+  "summary": "Publié en 1942, L'étranger est le premier roman d'Albert Camus. Il demeure, à ce jour, un ouvrage emblématique de la littérature française. \"Quand la sonnerie a encore retenti, que la porte du box s'est ouverte, c'est le silence de la salle qui est monté vers moi, le silence, et cette singulière sensation que j'ai eue lorsque j'ai constaté que le jeune journaliste avait détourné les yeux. Je n'ai pas regardé du côté de Marie. Je n'en ai pas eu le temps parce que le président m'a dit dans une forme bizarre que j'aurais la tête tranchée sur une place publique au nom du peuple français...\" Chaque chapitre de cette édition est introduit par une illustration. LES ÉDITIONS DU SOIR Maison d'édition libre et heureuse. Publication de classiques à collectionner. Couvertures uniques et artistiques",
+  "cover": {
+    "src": "https://covers.openlibrary.org/b/isbn/9798570069893-L.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9798570069893-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "suspense",
+    "nuance": "suspense",
+    "intensity": "doux",
+    "effect": "déstabilisant",
+    "context": [
+      "exil",
+      "solitude"
+    ]
+  },
+  "category": "ressentir-intensement",
+  "subcategory": "suspense",
+  "confidence": 0.0112,
+  "classifiedAt": "2026-04-26T13:05:55Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

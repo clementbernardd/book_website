@@ -1,0 +1,79 @@
+# Seed phrases per (axis, label). The classifier embeds these and compares against
+# the embedding of each book. 2-4 short French phrases per label work best.
+# Describe the FEELING of a book that fits the label, not the label name.
+
+category:
+  ressentir-liberer:
+    - "un livre triste et mélancolique qui fait pleurer pour libérer une émotion"
+    - "un récit de solitude, de manque, de nostalgie douce-amère"
+    - "une lecture cathartique sur le chagrin et l'absence"
+  aimer-vibrer:
+    - "une histoire d'amour passionnée, un coup de foudre"
+    - "un roman sur l'attachement profond, le désir, la rencontre amoureuse"
+    - "une romance bouleversante et sensuelle"
+  se-reconstruire:
+    - "un récit d'espoir, de résilience, de renaissance après l'épreuve"
+    - "un livre qui aide à se reconstruire après un deuil ou une rupture"
+    - "une histoire inspirante de quête de sens"
+  sevader:
+    - "un voyage imaginaire, une aventure dépaysante dans un autre monde"
+    - "un récit qui fait oublier le quotidien, plein d'émerveillement"
+    - "un roman fantastique ou onirique"
+  ressentir-intensement:
+    - "un thriller haletant, une lecture pleine de tension"
+    - "un livre qui choque, qui effraie, qui fascine"
+    - "un récit sombre, intense, plein de suspense"
+  sapaiser:
+    - "un livre doux et réconfortant, un cocon de lecture"
+    - "une lecture lente, sereine, légère"
+    - "un récit apaisant, plein de tendresse"
+
+subcategory:
+  tristesse: ["un récit triste, du chagrin, des larmes, une mélancolie profonde"]
+  solitude: ["une plongée dans la solitude, l'isolement, la solitude existentielle"]
+  nostalgie: ["la nostalgie d'une époque révolue, un souvenir doux-amer, le passé"]
+  manque: ["le manque de l'autre, l'absence qui pèse, le vide laissé"]
+  amour: ["l'amour romantique, la rencontre amoureuse, le sentiment amoureux"]
+  passion: ["la passion brûlante, le désir, l'obsession amoureuse"]
+  attachement: ["l'attachement profond, la tendresse, le lien durable, l'affection"]
+  attirance-complexe: ["une attirance trouble, ambiguë, parfois toxique, un amour impossible"]
+  espoir: ["l'espoir qui renaît, la lumière au bout du tunnel, l'optimisme"]
+  resilience: ["la résilience, surmonter, se relever, rebondir après l'épreuve"]
+  renouveau: ["un nouveau départ, une renaissance, un changement de vie"]
+  sens-inspiration: ["la quête de sens, une inspiration, une élévation spirituelle"]
+  emerveillement: ["l'émerveillement, la beauté, la magie du quotidien"]
+  curiosite: ["la curiosité, la découverte, l'envie de savoir, l'exploration intellectuelle"]
+  aventure: ["l'aventure, l'action, l'exploration, le voyage épique"]
+  imaginaire: ["un univers imaginaire, fantastique, onirique, féerique"]
+  peur: ["la peur, l'angoisse, l'horreur, la terreur"]
+  tension: ["la tension, le suspense, l'attente, l'oppression"]
+  choc: ["un choc, un retournement, une révélation brutale"]
+  fascination: ["la fascination, l'envoûtement, l'attraction du sombre"]
+  suspense: ["le suspense, l'enquête, le mystère, le polar"]
+  serenite: ["la sérénité, le calme, la paix intérieure, la méditation"]
+  douceur: ["la douceur, la tendresse, le réconfort, la bienveillance"]
+  reconfort: ["le réconfort, la chaleur, le cocon, l'apaisement"]
+  legerete: ["la légèreté, l'humour, l'insouciance, la fantaisie"]
+
+intensity:
+  doux: ["une lecture douce et tranquille, qui n'agite pas, sans bouleversement"]
+  modéré: ["une lecture émotionnelle mais maîtrisée, ni douce ni violente"]
+  bouleversant: ["une lecture qui retourne, qui marque profondément, qui bouleverse, intense"]
+
+effect:
+  apaisant: ["une lecture qui apaise, qui calme, qui rassure, qui repose"]
+  cathartique: ["une lecture cathartique qui libère, qui fait pleurer pour aller mieux"]
+  inspirant: ["une lecture inspirante qui donne envie d'agir, qui élève, qui motive"]
+  déstabilisant: ["une lecture déstabilisante, qui dérange, qui bouscule, qui questionne"]
+
+context:
+  rupture: ["traverser une rupture amoureuse, une séparation"]
+  deuil: ["faire face à un deuil, à une perte, à la mort d'un proche"]
+  solitude: ["vivre une période de solitude, d'isolement"]
+  quete-de-sens: ["chercher du sens à sa vie, une quête existentielle"]
+  burn-out: ["se remettre d'un burn-out, d'un épuisement professionnel"]
+  exil: ["l'exil, le déracinement, l'étranger en terre inconnue"]
+  parentalite: ["la parentalité, devenir parent, élever un enfant"]
+  transition: ["une période de transition, un changement de vie"]
+  adolescence: ["l'adolescence, le passage à l'âge adulte"]
+  vieillesse: ["la vieillesse, le temps qui passe, la fin de vie"]

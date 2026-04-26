@@ -1,0 +1,8 @@
+# Add books here, then run: python scripts/classify.py
+# Use ISBN if you have it (preferred), otherwise title + author.
+
+books:
+  # - isbn: "9782070360024"
+  # - title: "La Promesse de l'aube"
+  #   author: "Romain Gary"
+  #   hints: "autobiographique, lien mère-fils"

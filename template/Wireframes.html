@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Wireframes — Bibliothèque Émotionnelle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #d8c4a8; font-family: 'Inter', -apple-system, sans-serif; color: #3d2c1d; }
+  * { box-sizing: border-box; }
+  .dc-section-title { font-family: 'Fraunces', Georgia, serif !important; font-weight: 400 !important; }
+  .dc-artboard-label { font-family: 'Inter', sans-serif !important; font-weight: 500 !important; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="wireframes.jsx"></script>
+<script type="text/babel" src="screens-landing.jsx"></script>
+<script type="text/babel" src="screens-question.jsx"></script>
+<script type="text/babel" src="screens-explore.jsx"></script>
+<script type="text/babel" src="screens-situation.jsx"></script>
+<script type="text/babel" src="screens-results.jsx"></script>
+<script type="text/babel" src="screens-book.jsx"></script>
+<script type="text/babel" src="screens-profile.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+const { useState } = React;
+
+const DEFAULTS = /*EDITMODE-BEGIN*/{
+  "showAnnotations": true,
+  "accentHue": "terracotta",
+  "onlyVariation": "B"
+}/*EDITMODE-END*/;
+
+function App() {
+  const [values, setValue] = useTweaks(DEFAULTS);
+
+  // accent hue swap — recolor --terra CSS var
+  const accentMap = {
+    terracotta: '#8a6a4a',
+    sage: '#7a8a6a',
+    plum: '#7a5a6a',
+    ink: '#3d2c1d',
+  };
+  React.useEffect(() => {
+    document.documentElement.style.setProperty('--accent', accentMap[values.accentHue] || accentMap.terracotta);
+  }, [values.accentHue]);
+
+  // hide annotation notes when off
+  React.useEffect(() => {
+    const style = document.getElementById('note-toggle-style') || document.createElement('style');
+    style.id = 'note-toggle-style';
+    style.textContent = values.showAnnotations ? '' : '.wf-note { display: none !important; }';
+    if (!style.parentNode) document.head.appendChild(style);
+  }, [values.showAnnotations]);
+
+  const sections = [
+    {
+      id: 'landing', title: '1 · Accueil / Landing',
+      variants: [
+        { id: 'A', label: 'A — Hero classique + image', comp: LandingA },
+        { id: 'B', label: 'B — Type XXL centré', comp: LandingB },
+        { id: 'C', label: 'C — Grille d\'émotions dès l\'accueil', comp: LandingC },
+        { id: 'D', label: 'D — Sélection du jour + picker', comp: LandingD },
+      ]
+    },
+    {
+      id: 'question', title: '2 · "Que veux-tu ressentir ?"',
+      variants: [
+        { id: 'A', label: 'A — Grille d\'icônes (ref #3)', comp: QuestionA },
+        { id: 'B', label: 'B — Roue / pétales', comp: QuestionB },
+        { id: 'C', label: 'C — Phrase à compléter', comp: QuestionC },
+        { id: 'D', label: 'D — Curseurs d\'humeur', comp: QuestionD },
+      ]
+    },
+    {
+      id: 'explore', title: '3 · Explorer par émotion',
+      variants: [
+        { id: 'A', label: 'A — Tabs + cartes (ref #2)', comp: ExploreEmoA },
+        { id: 'B', label: 'B — Sidebar 6 familles', comp: ExploreEmoB },
+        { id: 'C', label: 'C — Nuage typographique', comp: ExploreEmoC },
+        { id: 'D', label: 'D — Carte 2D (intensité × tonalité)', comp: ExploreEmoD },
+      ]
+    },
+    {
+      id: 'situation', title: '4 · Explorer par situation',
+      variants: [
+        { id: 'A', label: 'A — Grille de situations', comp: SituationA },
+        { id: 'B', label: 'B — Liste éditoriale numérotée', comp: SituationB },
+        { id: 'C', label: 'C — Champ libre + tags', comp: SituationC },
+        { id: 'D', label: 'D — Parcours enchaînés', comp: SituationD },
+      ]
+    },
+    {
+      id: 'results', title: '5 · Résultats (liste de livres)',
+      variants: [
+        { id: 'A', label: 'A — Grille + sidebar filtres', comp: ResultsA },
+        { id: 'B', label: 'B — Liste dense comparateur', comp: ResultsB },
+        { id: 'C', label: 'C — Mise en page éditoriale', comp: ResultsC },
+        { id: 'D', label: 'D — Axe d\'intensité', comp: ResultsD },
+      ]
+    },
+    {
+      id: 'book', title: '6 · Fiche livre',
+      variants: [
+        { id: 'A', label: 'A — Ref #4 (couv + barres de points)', comp: BookA },
+        { id: 'B', label: 'B — Radar émotionnel', comp: BookB },
+        { id: 'C', label: 'C — Citation en héros', comp: BookC },
+        { id: 'D', label: 'D — Empreinte XXL en barres', comp: BookD },
+      ]
+    },
+    {
+      id: 'profile', title: '7 · Profil / Ma liste',
+      variants: [
+        { id: 'A', label: 'A — Grille classique + tabs', comp: ProfileA },
+        { id: 'B', label: 'B — Paysage émotionnel (radar)', comp: ProfileB },
+        { id: 'C', label: 'C — Journal timeline', comp: ProfileC },
+        { id: 'D', label: 'D — Étagères par émotion', comp: ProfileD },
+      ]
+    },
+  ];
+
+  const variantFilter = values.onlyVariation;
+
+  return (
+    <>
+      <DesignCanvas
+        title="Bibliothèque Émotionnelle — Wireframes"
+        subtitle="7 écrans · 4 variations chacun · low-fi N&B + terracotta"
+      >
+        {sections.map(section => (
+          <DCSection key={section.id} id={section.id} title={section.title}>
+            {section.variants
+              .filter(v => variantFilter === 'all' || variantFilter === v.id)
+              .map(v => (
+                <DCArtboard key={v.id} id={`${section.id}-${v.id}`} label={v.label} width={1200} height={780}>
+                  <div data-screen-label={`${section.title} — ${v.label}`}>
+                    <v.comp />
+                  </div>
+                </DCArtboard>
+              ))}
+          </DCSection>
+        ))}
+      </DesignCanvas>
+
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="Variations">
+          <TweakRadio
+            label="Afficher"
+            value={values.onlyVariation}
+            onChange={v => setValue('onlyVariation', v)}
+            options={[
+              { value: 'all', label: 'Toutes (A→D)' },
+              { value: 'A', label: 'A uniquement' },
+              { value: 'B', label: 'B uniquement' },
+              { value: 'C', label: 'C uniquement' },
+              { value: 'D', label: 'D uniquement' },
+            ]}
+          />
+        </TweakSection>
+        <TweakSection title="Apparence">
+          <TweakToggle
+            label="Annotations"
+            value={values.showAnnotations}
+            onChange={v => setValue('showAnnotations', v)}
+          />
+          <TweakRadio
+            label="Accent"
+            value={values.accentHue}
+            onChange={v => setValue('accentHue', v)}
+            options={[
+              { value: 'terracotta', label: 'Terracotta' },
+              { value: 'sage', label: 'Sauge' },
+              { value: 'plum', label: 'Prune' },
+              { value: 'ink', label: 'Graphite' },
+            ]}
+          />
+        </TweakSection>
+      </TweaksPanel>
+    </>
+  );
+}
+
+// Annotate the sketchy notes with a class so toggle works
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>

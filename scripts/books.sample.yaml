@@ -1,0 +1,18 @@
+# Sample books for testing the pipeline. Diverse on purpose to stress the classifier.
+
+books:
+  - title: "L'Étranger"
+    author: "Albert Camus"
+    hints: "solitude existentielle, absurde, aliénation"
+  - title: "La Promesse de l'aube"
+    author: "Romain Gary"
+    hints: "autobiographie, lien mère-fils, nostalgie"
+  - title: "Harry Potter à l'école des sorciers"
+    author: "J.K. Rowling"
+    hints: "magie, aventure, école de sorciers, émerveillement"
+  - title: "1984"
+    author: "George Orwell"
+    hints: "dystopie, surveillance totalitaire, oppression"
+  - title: "Le Petit Prince"
+    author: "Antoine de Saint-Exupéry"
+    hints: "conte philosophique, douceur, émerveillement"

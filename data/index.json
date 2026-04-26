@@ -1,0 +1,73 @@
+[
+  {
+    "isbn13": "9781520946634",
+    "slug": "petit-prince-saint-exupery",
+    "title": "Petit Prince",
+    "authors": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9781520946634-L.jpg",
+    "category": "sevader",
+    "subcategory": "imaginaire",
+    "mainEmotion": "imaginaire",
+    "intensity": "bouleversant",
+    "effect": "déstabilisant"
+  },
+  {
+    "isbn13": "9781781100820",
+    "slug": "harry-potter-a-lecole-des-sorciers-rowling",
+    "title": "Harry Potter à l’École des Sorciers",
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9781781100820-L.jpg",
+    "category": "ressentir-intensement",
+    "subcategory": "suspense",
+    "mainEmotion": "suspense",
+    "intensity": "bouleversant",
+    "effect": "déstabilisant"
+  },
+  {
+    "isbn13": "9782072735738",
+    "slug": "la-promesse-de-l-aube-gary",
+    "title": "La promesse de l'aube",
+    "authors": [
+      "Romain Gary"
+    ],
+    "cover": "/covers/9782072735738.jpg",
+    "category": "sevader",
+    "subcategory": "emerveillement",
+    "mainEmotion": "emerveillement",
+    "intensity": "bouleversant",
+    "effect": "inspirant"
+  },
+  {
+    "isbn13": "9798570069893",
+    "slug": "l-etranger-camus",
+    "title": "L'étranger",
+    "authors": [
+      "Albert Camus"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9798570069893-L.jpg",
+    "category": "ressentir-intensement",
+    "subcategory": "suspense",
+    "mainEmotion": "suspense",
+    "intensity": "doux",
+    "effect": "déstabilisant"
+  },
+  {
+    "isbn13": "9798708215833",
+    "slug": "1984-orwell",
+    "title": "1984",
+    "authors": [
+      "George Orwell",
+      "Amélie Audiberti"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9798708215833-L.jpg",
+    "category": "ressentir-intensement",
+    "subcategory": "tension",
+    "mainEmotion": "tension",
+    "intensity": "bouleversant",
+    "effect": "déstabilisant"
+  }
+]

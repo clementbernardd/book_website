@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782072735738",
+  "isbn10": "2072735734",
+  "slug": "la-promesse-de-l-aube-gary",
+  "title": "La promesse de l'aube",
+  "authors": [
+    "Romain Gary"
+  ],
+  "originalLanguage": "fr",
+  "publishedYear": 2017,
+  "publisher": "GALLIMARD",
+  "summary": "Et c'est ainsi que Romain Gary explique le titre qu'il donne à son autobiographie, La Promesse de l'aube. Fils unique d'une mère qui rêve sa progéniture en génie - un futur Victor Hugo, un aviateur pionnier comme Guynemer, un don Juan... -, il sera à la hauteur de beaucoup de ses attentes même quand elle ne sera plus là pour le constater... Cette autobiographie, un peu romancée, est poignante et également drôle, servie par un style brillant. On tourne les pages sans même s'en apercevoir.",
+  "cover": {
+    "src": "/covers/9782072735738.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782072735738-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "emerveillement",
+    "nuance": "emerveillement",
+    "intensity": "bouleversant",
+    "effect": "inspirant",
+    "context": [
+      "parentalite",
+      "quete-de-sens"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "emerveillement",
+  "confidence": 0.0874,
+  "classifiedAt": "2026-04-26T13:05:59Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

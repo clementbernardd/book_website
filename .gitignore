@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+
+.venv
+__pycache__
+*.pyc
+.python-version
+
+.DS_Store
+.env*.local
+
+# Local-only artifacts that shouldn't be committed (zip + WhatsApp uploads)
+SiteMarieLivre.zip
+uploads/
