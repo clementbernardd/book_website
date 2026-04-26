@@ -29,8 +29,9 @@ jobs:
 
       - name: Build (static export)
         env:
-          # Set this to "/<repo-name>" for a project Pages site, or empty for a custom domain.
-          NEXT_PUBLIC_BASE_PATH: /site-livre
+          # Must match the repo name for a project Pages site (clementbernardd.github.io/book_website),
+          # or set to empty when using a custom domain.
+          NEXT_PUBLIC_BASE_PATH: /book_website
         run: npm run build
 
       - name: Disable Jekyll on Pages
