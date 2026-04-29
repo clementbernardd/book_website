@@ -1,0 +1,33 @@
+{
+  "isbn13": "9782363940582",
+  "isbn10": "236394058X",
+  "slug": "cent-ans-de-solitude-marquez",
+  "title": "Cent Ans de Solitude",
+  "authors": [
+    "Gabriel García Márquez",
+    "Point2"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2012,
+  "publisher": "French and European Publications Inc",
+  "summary": "Source title: Cent Ans de Solitude (Pointdeux) (French Edition)",
+  "cover": {
+    "src": "/covers/9782363940582.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782363940582-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "emerveillement",
+    "nuance": "emerveillement",
+    "intensity": "doux",
+    "effect": "apaisant",
+    "context": [
+      "solitude",
+      "quete-de-sens"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "emerveillement",
+  "confidence": 0.066,
+  "classifiedAt": "2026-04-29T19:57:09Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

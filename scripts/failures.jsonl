@@ -1,1 +1,1 @@
-{"entry": {"title": "Le Petit Prince", "author": "Antoine de Saint-Exupéry", "hints": "conte philosophique, douceur, émerveillement"}, "error": "No ISBN found for title='Le Petit Prince' author='Antoine de Saint-Exupéry'"}
+{"entry": {"isbn": "9782070361939", "title": "La Promesse de l'aube", "author": "Romain Gary"}, "fetched": {"title": "Le démon du bien.", "authors": ["Henry de Montherlant"], "isbn13": "9782070361939"}, "error": "fetched title 'Le démon du bien.' shares no significant word with requested \"La Promesse de l'aube\""}

@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782864247951",
+  "isbn10": "286424795X",
+  "slug": "le-vieux-qui-lisait-des-romans-d-amour-sepulveda",
+  "title": "Le Vieux qui lisait des romans d'amour",
+  "authors": [
+    "Luis Sepúlveda"
+  ],
+  "originalLanguage": null,
+  "publishedYear": null,
+  "publisher": null,
+  "summary": "",
+  "cover": {
+    "src": "https://covers.openlibrary.org/b/isbn/9782864247951-L.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782864247951-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "tristesse",
+    "nuance": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique",
+    "context": [
+      "rupture",
+      "solitude"
+    ]
+  },
+  "category": "ressentir-liberer",
+  "subcategory": "tristesse",
+  "confidence": 0.0232,
+  "classifiedAt": "2026-04-29T19:55:27Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070725809",
+  "isbn10": "2070725804",
+  "slug": "comme-un-roman-pennac",
+  "title": "Comme un roman",
+  "authors": [
+    "Daniel Pennac"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1992,
+  "publisher": "Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070725809.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070725809-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "legerete",
+    "nuance": "legerete",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "quete-de-sens",
+      "solitude"
+    ]
+  },
+  "category": "sapaiser",
+  "subcategory": "legerete",
+  "confidence": 0.1242,
+  "classifiedAt": "2026-04-29T19:59:07Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

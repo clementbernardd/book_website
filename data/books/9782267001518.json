@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782267001518",
+  "isbn10": "2267001519",
+  "slug": "l-ecume-des-jours-vian",
+  "title": "L'écume des jours",
+  "authors": [
+    "Boris Vian"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1975,
+  "publisher": "C. Bourgois",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782267001518.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782267001518-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "emerveillement",
+    "nuance": "emerveillement",
+    "intensity": "modéré",
+    "effect": "déstabilisant",
+    "context": [
+      "quete-de-sens",
+      "exil"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "emerveillement",
+  "confidence": 0.0388,
+  "classifiedAt": "2026-04-29T19:56:36Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

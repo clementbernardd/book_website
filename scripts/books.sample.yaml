@@ -1,18 +1,14 @@
-# Sample books for testing the pipeline. Diverse on purpose to stress the classifier.
+# Sample books — known-good Folio / Gallimard ISBN-13s so Amazon/Fnac/BnF links resolve.
+# When you add real books, prefer pasting an ISBN-13 from the Folio / Gallimard / Seuil edition you own.
 
 books:
-  - title: "L'Étranger"
-    author: "Albert Camus"
-    hints: "solitude existentielle, absurde, aliénation"
-  - title: "La Promesse de l'aube"
-    author: "Romain Gary"
+  - isbn: "9782070360024"          # L'Étranger - Camus (Folio classique)
+    hints: "solitude, absurde, aliénation"
+  - isbn: "9782072735738"          # La Promesse de l'aube - Romain Gary (Folio, current ed.)
     hints: "autobiographie, lien mère-fils, nostalgie"
-  - title: "Harry Potter à l'école des sorciers"
-    author: "J.K. Rowling"
-    hints: "magie, aventure, école de sorciers, émerveillement"
-  - title: "1984"
-    author: "George Orwell"
-    hints: "dystopie, surveillance totalitaire, oppression"
-  - title: "Le Petit Prince"
-    author: "Antoine de Saint-Exupéry"
+  - isbn: "9782070518425"          # Harry Potter à l'école des sorciers (Folio Junior)
+    hints: "magie, aventure, école de sorciers"
+  - isbn: "9782070368228"          # 1984 - Orwell (Folio, trad. Audiberti)
+    hints: "dystopie, surveillance totalitaire"
+  - isbn: "9782070612758"          # Le Petit Prince (Folio)
     hints: "conte philosophique, douceur, émerveillement"

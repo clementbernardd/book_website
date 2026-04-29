@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070518425",
+  "isbn10": "2070518426",
+  "slug": "harry-potter-a-l-ecole-des-sorciers-rowling",
+  "title": "Harry Potter à l'école des sorciers",
+  "authors": [
+    "J. K. Rowling"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2001,
+  "publisher": "Gallimard Jeunesse",
+  "summary": "Suite: Harry Potter et la chambre des secrets.\r\n\r\nPour les jeunes de 10 ans et plus.",
+  "cover": {
+    "src": "/covers/9782070518425.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070518425-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "fascination",
+    "nuance": "fascination",
+    "intensity": "bouleversant",
+    "effect": "inspirant",
+    "context": [
+      "adolescence",
+      "quete-de-sens"
+    ]
+  },
+  "category": "ressentir-intensement",
+  "subcategory": "fascination",
+  "confidence": 0.0294,
+  "classifiedAt": "2026-04-29T19:56:03Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

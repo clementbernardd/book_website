@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782877068161",
+  "isbn10": "2877068161",
+  "slug": "la-verite-sur-l-affaire-harry-quebert-dicker",
+  "title": "La vérité sur l'affaire Harry Quebert",
+  "authors": [
+    "Joël Dicker"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2012,
+  "publisher": "Éditions de Fallois",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782877068161.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782877068161-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "suspense",
+    "nuance": "suspense",
+    "intensity": "bouleversant",
+    "effect": "déstabilisant",
+    "context": [
+      "deuil",
+      "quete-de-sens"
+    ]
+  },
+  "category": "ressentir-intensement",
+  "subcategory": "suspense",
+  "confidence": 0.0834,
+  "classifiedAt": "2026-04-29T19:58:35Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

@@ -1,0 +1,33 @@
+{
+  "isbn13": "9782910188702",
+  "isbn10": "2910188701",
+  "slug": "l-alchimiste-coelho",
+  "title": "L'Alchimiste",
+  "authors": [
+    "Paulo Coelho",
+    "Moebius"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1995,
+  "publisher": "Anne Carrière",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782910188702.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782910188702-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "sens-inspiration",
+    "nuance": "sens-inspiration",
+    "intensity": "modéré",
+    "effect": "inspirant",
+    "context": [
+      "exil",
+      "quete-de-sens"
+    ]
+  },
+  "category": "se-reconstruire",
+  "subcategory": "sens-inspiration",
+  "confidence": 0.0101,
+  "classifiedAt": "2026-04-29T19:54:36Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

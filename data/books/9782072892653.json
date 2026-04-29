@@ -1,0 +1,33 @@
+{
+  "isbn13": "9782072892653",
+  "isbn10": "2072892651",
+  "slug": "l-insoutenable-legerete-de-l-etre-kundera",
+  "title": "L'insoutenable légèreté de l'être",
+  "authors": [
+    "Milan Kundera",
+    "François Kérel"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2020,
+  "publisher": "FOLIO",
+  "summary": "",
+  "cover": {
+    "src": "https://covers.openlibrary.org/b/isbn/9782072892653-L.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782072892653-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "serenite",
+    "nuance": "serenite",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "quete-de-sens",
+      "solitude"
+    ]
+  },
+  "category": "sapaiser",
+  "subcategory": "serenite",
+  "confidence": 0.0508,
+  "classifiedAt": "2026-04-29T19:59:41Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

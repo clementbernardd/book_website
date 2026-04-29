@@ -1,8 +1,74 @@
-# Add books here, then run: python scripts/classify.py
-# Use ISBN if you have it (preferred), otherwise title + author.
+# Curated French books for the bibliothèque émotionnelle.
+# Folio / Pocket / Le Livre de Poche editions when possible (978-2…).
+# Prefer ISBN when verified, otherwise title+author and let the fetcher pick.
 
 books:
-  # - isbn: "9782070360024"
-  # - title: "La Promesse de l'aube"
-  #   author: "Romain Gary"
-  #   hints: "autobiographique, lien mère-fils"
+  # --- Ressentir / libérer ---
+  - isbn: "9782070360024"          # L'Étranger - Camus (verified)
+    hints: "solitude existentielle, absurde, aliénation"
+  - isbn: "9782707306951"          # L'Amant - Marguerite Duras (verified)
+    hints: "amour impossible, nostalgie, mémoire"
+  - isbn: "9782253150718"          # Stupeur et tremblements - Nothomb (verified)
+    hints: "solitude, humiliation, choc culturel"
+  - title: "Une vie"
+    author: "Guy de Maupassant"
+    hints: "désillusion, mélancolie, destin féminin"
+  - title: "La Douleur"
+    author: "Marguerite Duras"
+    hints: "deuil, attente, traumatisme de guerre"
+
+  # --- Aimer / vibrer ---
+  - isbn: "9782072735738"          # La Promesse de l'aube - Gary (verified)
+    hints: "lien mère-fils, amour absolu, autobiographie"
+  - title: "Belle du Seigneur"
+    author: "Albert Cohen"
+    hints: "passion amoureuse, désir, déchirement"
+  - title: "L'Élégance du hérisson"
+    author: "Muriel Barbery"
+    hints: "tendresse improbable, attachement, beauté du quotidien"
+  - title: "Bonjour tristesse"
+    author: "Françoise Sagan"
+    hints: "amour vénéneux, désinvolture, jeunesse"
+
+  # --- Se reconstruire / espérer ---
+  - title: "L'Alchimiste"
+    author: "Paulo Coelho"
+    hints: "quête, sens, voyage initiatique, espoir"
+  - isbn: "9782253070443"          # Petit Pays - Gaël Faye (verified)
+    hints: "exil, enfance, mémoire, résilience"
+  - title: "Le Vieux qui lisait des romans d'amour"
+    author: "Luis Sepúlveda"
+    hints: "solitude apaisée, sagesse, retour à soi"
+
+  # --- S'évader / se perdre ---
+  - isbn: "9782070612758"          # Le Petit Prince (verified)
+    hints: "conte philosophique, douceur, émerveillement"
+  - isbn: "9782070518425"          # Harry Potter à l'école des sorciers (verified)
+    hints: "magie, aventure, école de sorciers"
+  - title: "L'Écume des jours"
+    author: "Boris Vian"
+    hints: "imaginaire surréaliste, amour fou, fantaisie sombre"
+  - title: "Cent ans de solitude"
+    author: "Gabriel García Márquez"
+    hints: "réalisme magique, fresque familiale, imaginaire luxuriant"
+
+  # --- Ressentir intensément ---
+  - isbn: "9782070368228"          # 1984 - Orwell (verified)
+    hints: "dystopie, surveillance totalitaire, oppression"
+  - title: "Les Bienveillantes"
+    author: "Jonathan Littell"
+    hints: "guerre, horreur, monologue glaçant"
+  - title: "La Vérité sur l'affaire Harry Quebert"
+    author: "Joël Dicker"
+    hints: "enquête, suspense, secrets enfouis"
+
+  # --- S'apaiser / ralentir ---
+  - title: "Comme un roman"
+    author: "Daniel Pennac"
+    hints: "amour de la lecture, douceur, légèreté"
+  - title: "L'Insoutenable Légèreté de l'être"
+    author: "Milan Kundera"
+    hints: "méditation, philosophie, mélancolie douce"
+  - title: "Chanson douce"
+    author: "Leïla Slimani"
+    hints: "calme apparent, tension sourde, intimité domestique"

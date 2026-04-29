@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070368228",
+  "isbn10": "207036822X",
+  "slug": "1984-orwell",
+  "title": "1984",
+  "authors": [
+    "George Orwell"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1993,
+  "publisher": "Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070368228.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070368228-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "imaginaire",
+    "nuance": "imaginaire",
+    "intensity": "bouleversant",
+    "effect": "déstabilisant",
+    "context": [
+      "exil",
+      "vieillesse"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "imaginaire",
+  "confidence": 0.0237,
+  "classifiedAt": "2026-04-29T19:57:27Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

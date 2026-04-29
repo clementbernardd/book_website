@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070360024",
+  "isbn10": "2070360024",
+  "slug": "letranger-camus",
+  "title": "L’étranger",
+  "authors": [
+    "Albert Camus"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1972,
+  "publisher": "Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070360024.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070360024-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "aventure",
+    "nuance": "aventure",
+    "intensity": "modéré",
+    "effect": "déstabilisant",
+    "context": [
+      "quete-de-sens",
+      "solitude"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "aventure",
+  "confidence": 0.0758,
+  "classifiedAt": "2026-04-29T19:50:29Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070780938",
+  "isbn10": "2070780937",
+  "slug": "l-elegance-du-herisson-barbery",
+  "title": "L'élégance du hérisson",
+  "authors": [
+    "Muriel Barbery"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2006,
+  "publisher": "Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070780938.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070780938-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "legerete",
+    "nuance": "legerete",
+    "intensity": "modéré",
+    "effect": "cathartique",
+    "context": [
+      "vieillesse",
+      "quete-de-sens"
+    ]
+  },
+  "category": "sapaiser",
+  "subcategory": "legerete",
+  "confidence": 0.0287,
+  "classifiedAt": "2026-04-29T19:53:29Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

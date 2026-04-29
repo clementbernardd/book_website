@@ -16,6 +16,8 @@ export default {
         terra:     '#8a6a4a',
         terraSoft: '#c9a785',
         terraWash: '#e2d2bc',
+        marron:    '#5a3f2c',
+        marronDeep:'#3d2c1d',
         beige1:    '#e9dcc4',
         beige2:    '#d6c4a3',
         beige3:    '#bfa57f',

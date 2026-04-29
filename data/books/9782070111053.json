@@ -1,0 +1,36 @@
+{
+  "isbn13": "9782070111053",
+  "isbn10": "2070111059",
+  "slug": "belle-du-seigneur-cohen",
+  "title": "Belle du Seigneur",
+  "authors": [
+    "Albert Cohen",
+    "Albert Cohen",
+    "Albert COHEN",
+    "15",
+    "albert cohen "
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1986,
+  "publisher": "Gallimard",
+  "summary": "Bibliography: p. [cix]-cxi.",
+  "cover": {
+    "src": "/covers/9782070111053.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070111053-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "passion",
+    "nuance": "passion",
+    "intensity": "modéré",
+    "effect": "inspirant",
+    "context": [
+      "rupture",
+      "quete-de-sens"
+    ]
+  },
+  "category": "aimer-vibrer",
+  "subcategory": "passion",
+  "confidence": 0.0725,
+  "classifiedAt": "2026-04-29T19:52:57Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

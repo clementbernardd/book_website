@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782867440427",
+  "isbn10": "2867440424",
+  "slug": "la-douleur-duras",
+  "title": "La douleur",
+  "authors": [
+    "Marguerite Duras"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1985,
+  "publisher": "P.O.L.",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782867440427.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782867440427-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "tristesse",
+    "nuance": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique",
+    "context": [
+      "deuil",
+      "exil"
+    ]
+  },
+  "category": "ressentir-liberer",
+  "subcategory": "tristesse",
+  "confidence": 0.0682,
+  "classifiedAt": "2026-04-29T19:52:09Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

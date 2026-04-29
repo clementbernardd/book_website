@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782253150718",
+  "isbn10": "2253150711",
+  "slug": "stupeur-et-tremblements-nothomb",
+  "title": "Stupeur et tremblements",
+  "authors": [
+    "Amélie Nothomb"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2002,
+  "publisher": "Albin Michel",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782253150718.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782253150718-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "tristesse",
+    "nuance": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique",
+    "context": [
+      "solitude",
+      "deuil"
+    ]
+  },
+  "category": "ressentir-liberer",
+  "subcategory": "tristesse",
+  "confidence": 0.0859,
+  "classifiedAt": "2026-04-29T19:51:06Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

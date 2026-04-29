@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782253070443",
+  "isbn10": "2253070440",
+  "slug": "petit-pays-faye",
+  "title": "Petit pays",
+  "authors": [
+    "Gaël Faye"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2017,
+  "publisher": "Le Livre de Poche",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782253070443.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782253070443-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "resilience",
+    "nuance": "resilience",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "solitude",
+      "exil"
+    ]
+  },
+  "category": "se-reconstruire",
+  "subcategory": "resilience",
+  "confidence": 0.0087,
+  "classifiedAt": "2026-04-29T19:54:54Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

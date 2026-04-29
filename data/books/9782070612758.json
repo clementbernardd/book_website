@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070612758",
+  "isbn10": "2070612759",
+  "slug": "le-petit-prince-saint-exupery",
+  "title": "Le Petit Prince",
+  "authors": [
+    "Antoine de Saint-Exupéry"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2007,
+  "publisher": "Editions Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070612758.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070612758-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "emerveillement",
+    "nuance": "emerveillement",
+    "intensity": "modéré",
+    "effect": "inspirant",
+    "context": [
+      "vieillesse",
+      "exil"
+    ]
+  },
+  "category": "sevader",
+  "subcategory": "emerveillement",
+  "confidence": 0.0504,
+  "classifiedAt": "2026-04-29T19:55:45Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

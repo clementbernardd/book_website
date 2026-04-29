@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070780976",
+  "isbn10": "207078097X",
+  "slug": "les-bienveillantes-littell",
+  "title": "Les Bienveillantes",
+  "authors": [
+    "Jonathan Littell"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2006,
+  "publisher": "Editions Gallimard",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782070780976.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070780976-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "suspense",
+    "nuance": "suspense",
+    "intensity": "bouleversant",
+    "effect": "cathartique",
+    "context": [
+      "exil",
+      "vieillesse"
+    ]
+  },
+  "category": "ressentir-intensement",
+  "subcategory": "suspense",
+  "confidence": 0.024,
+  "classifiedAt": "2026-04-29T19:58:00Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

@@ -1,12 +1,58 @@
 [
   {
-    "isbn13": "9781520946634",
-    "slug": "petit-prince-saint-exupery",
-    "title": "Petit Prince",
+    "isbn13": "9782070111053",
+    "slug": "belle-du-seigneur-cohen",
+    "title": "Belle du Seigneur",
     "authors": [
-      "Antoine de Saint-Exupéry"
+      "Albert Cohen",
+      "Albert Cohen",
+      "Albert COHEN",
+      "15",
+      "albert cohen "
     ],
-    "cover": "https://covers.openlibrary.org/b/isbn/9781520946634-L.jpg",
+    "cover": "/covers/9782070111053.jpg",
+    "category": "aimer-vibrer",
+    "subcategory": "passion",
+    "mainEmotion": "passion",
+    "intensity": "modéré",
+    "effect": "inspirant"
+  },
+  {
+    "isbn13": "9782070196678",
+    "slug": "chanson-douce-slimani",
+    "title": "Chanson douce",
+    "authors": [
+      "Leïla Slimani"
+    ],
+    "cover": "/covers/9782070196678.jpg",
+    "category": "sapaiser",
+    "subcategory": "douceur",
+    "mainEmotion": "douceur",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782070360024",
+    "slug": "letranger-camus",
+    "title": "L’étranger",
+    "authors": [
+      "Albert Camus"
+    ],
+    "cover": "/covers/9782070360024.jpg",
+    "category": "sevader",
+    "subcategory": "aventure",
+    "mainEmotion": "aventure",
+    "intensity": "modéré",
+    "effect": "déstabilisant"
+  },
+  {
+    "isbn13": "9782070368228",
+    "slug": "1984-orwell",
+    "title": "1984",
+    "authors": [
+      "George Orwell"
+    ],
+    "cover": "/covers/9782070368228.jpg",
     "category": "sevader",
     "subcategory": "imaginaire",
     "mainEmotion": "imaginaire",
@@ -14,18 +60,74 @@
     "effect": "déstabilisant"
   },
   {
-    "isbn13": "9781781100820",
-    "slug": "harry-potter-a-lecole-des-sorciers-rowling",
-    "title": "Harry Potter à l’École des Sorciers",
+    "isbn13": "9782070518425",
+    "slug": "harry-potter-a-l-ecole-des-sorciers-rowling",
+    "title": "Harry Potter à l'école des sorciers",
     "authors": [
-      "J.K. Rowling"
+      "J. K. Rowling"
     ],
-    "cover": "https://covers.openlibrary.org/b/isbn/9781781100820-L.jpg",
+    "cover": "/covers/9782070518425.jpg",
+    "category": "ressentir-intensement",
+    "subcategory": "fascination",
+    "mainEmotion": "fascination",
+    "intensity": "bouleversant",
+    "effect": "inspirant"
+  },
+  {
+    "isbn13": "9782070612758",
+    "slug": "le-petit-prince-saint-exupery",
+    "title": "Le Petit Prince",
+    "authors": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "cover": "/covers/9782070612758.jpg",
+    "category": "sevader",
+    "subcategory": "emerveillement",
+    "mainEmotion": "emerveillement",
+    "intensity": "modéré",
+    "effect": "inspirant"
+  },
+  {
+    "isbn13": "9782070725809",
+    "slug": "comme-un-roman-pennac",
+    "title": "Comme un roman",
+    "authors": [
+      "Daniel Pennac"
+    ],
+    "cover": "/covers/9782070725809.jpg",
+    "category": "sapaiser",
+    "subcategory": "legerete",
+    "mainEmotion": "legerete",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782070780938",
+    "slug": "l-elegance-du-herisson-barbery",
+    "title": "L'élégance du hérisson",
+    "authors": [
+      "Muriel Barbery"
+    ],
+    "cover": "/covers/9782070780938.jpg",
+    "category": "sapaiser",
+    "subcategory": "legerete",
+    "mainEmotion": "legerete",
+    "intensity": "modéré",
+    "effect": "cathartique"
+  },
+  {
+    "isbn13": "9782070780976",
+    "slug": "les-bienveillantes-littell",
+    "title": "Les Bienveillantes",
+    "authors": [
+      "Jonathan Littell"
+    ],
+    "cover": "/covers/9782070780976.jpg",
     "category": "ressentir-intensement",
     "subcategory": "suspense",
     "mainEmotion": "suspense",
     "intensity": "bouleversant",
-    "effect": "déstabilisant"
+    "effect": "cathartique"
   },
   {
     "isbn13": "9782072735738",
@@ -35,39 +137,181 @@
       "Romain Gary"
     ],
     "cover": "/covers/9782072735738.jpg",
-    "category": "sevader",
-    "subcategory": "emerveillement",
-    "mainEmotion": "emerveillement",
-    "intensity": "bouleversant",
+    "category": "aimer-vibrer",
+    "subcategory": "passion",
+    "mainEmotion": "passion",
+    "intensity": "modéré",
     "effect": "inspirant"
   },
   {
-    "isbn13": "9798570069893",
-    "slug": "l-etranger-camus",
-    "title": "L'étranger",
+    "isbn13": "9782072892653",
+    "slug": "l-insoutenable-legerete-de-l-etre-kundera",
+    "title": "L'insoutenable légèreté de l'être",
     "authors": [
-      "Albert Camus"
+      "Milan Kundera",
+      "François Kérel"
     ],
-    "cover": "https://covers.openlibrary.org/b/isbn/9798570069893-L.jpg",
-    "category": "ressentir-intensement",
-    "subcategory": "suspense",
-    "mainEmotion": "suspense",
-    "intensity": "doux",
+    "cover": "https://covers.openlibrary.org/b/isbn/9782072892653-L.jpg",
+    "category": "sapaiser",
+    "subcategory": "serenite",
+    "mainEmotion": "serenite",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782253070443",
+    "slug": "petit-pays-faye",
+    "title": "Petit pays",
+    "authors": [
+      "Gaël Faye"
+    ],
+    "cover": "/covers/9782253070443.jpg",
+    "category": "se-reconstruire",
+    "subcategory": "resilience",
+    "mainEmotion": "resilience",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782253150718",
+    "slug": "stupeur-et-tremblements-nothomb",
+    "title": "Stupeur et tremblements",
+    "authors": [
+      "Amélie Nothomb"
+    ],
+    "cover": "/covers/9782253150718.jpg",
+    "category": "ressentir-liberer",
+    "subcategory": "tristesse",
+    "mainEmotion": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique"
+  },
+  {
+    "isbn13": "9782266195584",
+    "slug": "bonjour-tristesse-sagan",
+    "title": "Bonjour Tristesse",
+    "authors": [
+      "Françoise Sagan"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9782266195584-L.jpg",
+    "category": "sapaiser",
+    "subcategory": "legerete",
+    "mainEmotion": "legerete",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782267001518",
+    "slug": "l-ecume-des-jours-vian",
+    "title": "L'écume des jours",
+    "authors": [
+      "Boris Vian"
+    ],
+    "cover": "/covers/9782267001518.jpg",
+    "category": "sevader",
+    "subcategory": "emerveillement",
+    "mainEmotion": "emerveillement",
+    "intensity": "modéré",
     "effect": "déstabilisant"
   },
   {
-    "isbn13": "9798708215833",
-    "slug": "1984-orwell",
-    "title": "1984",
+    "isbn13": "9782277219521",
+    "slug": "une-vie-maupassant",
+    "title": "Une Vie",
     "authors": [
-      "George Orwell",
-      "Amélie Audiberti"
+      "Guy de Maupassant"
     ],
-    "cover": "https://covers.openlibrary.org/b/isbn/9798708215833-L.jpg",
+    "cover": "https://covers.openlibrary.org/b/isbn/9782277219521-L.jpg",
+    "category": "sevader",
+    "subcategory": "emerveillement",
+    "mainEmotion": "emerveillement",
+    "intensity": "modéré",
+    "effect": "inspirant"
+  },
+  {
+    "isbn13": "9782363940582",
+    "slug": "cent-ans-de-solitude-marquez",
+    "title": "Cent Ans de Solitude",
+    "authors": [
+      "Gabriel García Márquez",
+      "Point2"
+    ],
+    "cover": "/covers/9782363940582.jpg",
+    "category": "sevader",
+    "subcategory": "emerveillement",
+    "mainEmotion": "emerveillement",
+    "intensity": "doux",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782707306951",
+    "slug": "l-amant-duras",
+    "title": "L' amant",
+    "authors": [
+      "Marguerite Duras"
+    ],
+    "cover": "/covers/9782707306951.jpg",
+    "category": "aimer-vibrer",
+    "subcategory": "amour",
+    "mainEmotion": "amour",
+    "intensity": "modéré",
+    "effect": "apaisant"
+  },
+  {
+    "isbn13": "9782864247951",
+    "slug": "le-vieux-qui-lisait-des-romans-d-amour-sepulveda",
+    "title": "Le Vieux qui lisait des romans d'amour",
+    "authors": [
+      "Luis Sepúlveda"
+    ],
+    "cover": "https://covers.openlibrary.org/b/isbn/9782864247951-L.jpg",
+    "category": "ressentir-liberer",
+    "subcategory": "tristesse",
+    "mainEmotion": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique"
+  },
+  {
+    "isbn13": "9782867440427",
+    "slug": "la-douleur-duras",
+    "title": "La douleur",
+    "authors": [
+      "Marguerite Duras"
+    ],
+    "cover": "/covers/9782867440427.jpg",
+    "category": "ressentir-liberer",
+    "subcategory": "tristesse",
+    "mainEmotion": "tristesse",
+    "intensity": "modéré",
+    "effect": "cathartique"
+  },
+  {
+    "isbn13": "9782877068161",
+    "slug": "la-verite-sur-l-affaire-harry-quebert-dicker",
+    "title": "La vérité sur l'affaire Harry Quebert",
+    "authors": [
+      "Joël Dicker"
+    ],
+    "cover": "/covers/9782877068161.jpg",
     "category": "ressentir-intensement",
-    "subcategory": "tension",
-    "mainEmotion": "tension",
+    "subcategory": "suspense",
+    "mainEmotion": "suspense",
     "intensity": "bouleversant",
     "effect": "déstabilisant"
+  },
+  {
+    "isbn13": "9782910188702",
+    "slug": "l-alchimiste-coelho",
+    "title": "L'Alchimiste",
+    "authors": [
+      "Paulo Coelho",
+      "Moebius"
+    ],
+    "cover": "/covers/9782910188702.jpg",
+    "category": "se-reconstruire",
+    "subcategory": "sens-inspiration",
+    "mainEmotion": "sens-inspiration",
+    "intensity": "modéré",
+    "effect": "inspirant"
   }
 ]

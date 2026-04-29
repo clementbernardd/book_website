@@ -29,7 +29,10 @@ def _get(url: str) -> httpx.Response:
 
 def open_library_by_isbn(isbn: str) -> dict | None:
     url = f"https://openlibrary.org/api/books?bibkeys=ISBN:{isbn}&format=json&jscmd=data"
-    r = _get(url)
+    try:
+        r = _get(url)
+    except Exception:
+        return None
     if r.status_code != 200:
         return None
     payload = r.json()
@@ -47,7 +50,10 @@ def open_library_search(title: str, author: str | None = None) -> str | None:
     if author:
         params["author"] = author
     url = "https://openlibrary.org/search.json?" + urlencode(params)
-    r = _get(url)
+    try:
+        r = _get(url)
+    except Exception:
+        return None
     if r.status_code != 200:
         return None
     docs = r.json().get("docs", [])
@@ -71,7 +77,10 @@ def open_library_search(title: str, author: str | None = None) -> str | None:
 
 def google_books_by_isbn(isbn: str) -> dict | None:
     url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
-    r = _get(url)
+    try:
+        r = _get(url)
+    except Exception:
+        return None
     if r.status_code != 200:
         return None
     items = r.json().get("items") or []
@@ -83,32 +92,49 @@ def google_books_by_isbn(isbn: str) -> dict | None:
 def google_books_search(title: str, author: str | None = None, lang: str = "fr") -> str | None:
     """Search Google Books and return the best ISBN-13.
 
-    Prefer French editions (langRestrict=fr) — fall back to any language.
+    Strongly prefer canonical French publisher editions (ISBN-13 starting with
+    978-2…) — picks Folio/Gallimard over print-on-demand and Kindle reprints
+    (979- prefix), which carry no real retailer pages.
     """
-    def _query(restrict_lang: bool) -> str | None:
+    def _candidates(restrict_lang: bool) -> list[str]:
         q = f'intitle:"{title}"'
         if author:
             q += f' inauthor:"{author}"'
-        params = {"q": q, "maxResults": "5", "printType": "books"}
+        params = {"q": q, "maxResults": "20", "printType": "books"}
         if restrict_lang:
             params["langRestrict"] = lang
-        r = _get("https://www.googleapis.com/books/v1/volumes?" + urlencode(params))
+        try:
+            r = _get("https://www.googleapis.com/books/v1/volumes?" + urlencode(params))
+        except Exception:
+            return []
         if r.status_code != 200:
-            return None
+            return []
         items = r.json().get("items") or []
+        out: list[str] = []
         for it in items:
             ids = (it.get("volumeInfo") or {}).get("industryIdentifiers") or []
             for ident in ids:
-                if ident.get("type") == "ISBN_13":
-                    return ident.get("identifier")
-            for ident in ids:
-                if ident.get("type") == "ISBN_10":
-                    cand = isbn10_to_isbn13(ident.get("identifier", ""))
+                t = ident.get("type")
+                v = ident.get("identifier", "")
+                if t == "ISBN_13":
+                    out.append(v)
+                elif t == "ISBN_10":
+                    cand = isbn10_to_isbn13(v)
                     if cand:
-                        return cand
-        return None
+                        out.append(cand)
+        return out
 
-    return _query(restrict_lang=True) or _query(restrict_lang=False)
+    pool = _candidates(restrict_lang=True) + _candidates(restrict_lang=False)
+    # 1) French publisher ISBN-13 (978-2…) — Gallimard, Folio, Seuil, Albin Michel, etc.
+    for c in pool:
+        if c.startswith("9782"):
+            return c
+    # 2) Any non-979 ISBN-13 (canonical pre-2020 books)
+    for c in pool:
+        if c.startswith("978") and not c.startswith("9798"):
+            return c
+    # 3) Anything we found, last resort
+    return pool[0] if pool else None
 
 
 def isbn13_to_isbn10(isbn13: str) -> str | None:

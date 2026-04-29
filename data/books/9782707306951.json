@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782707306951",
+  "isbn10": "2707306959",
+  "slug": "l-amant-duras",
+  "title": "L' amant",
+  "authors": [
+    "Marguerite Duras"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 1984,
+  "publisher": "Editions de minuit",
+  "summary": "",
+  "cover": {
+    "src": "/covers/9782707306951.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782707306951-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "amour",
+    "nuance": "amour",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "rupture",
+      "vieillesse"
+    ]
+  },
+  "category": "aimer-vibrer",
+  "subcategory": "amour",
+  "confidence": 0.0318,
+  "classifiedAt": "2026-04-29T19:50:47Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

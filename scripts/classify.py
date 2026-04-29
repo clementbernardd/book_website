@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 import traceback
 from pathlib import Path
 
@@ -41,6 +42,42 @@ def isbn_for(entry: dict) -> str | None:
     return str(entry["isbn"]) if entry.get("isbn") else None
 
 
+def _normalize(s: str) -> str:
+    import re, unicodedata
+    s = unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode("ascii").lower()
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+def looks_valid(entry: dict, meta: dict) -> tuple[bool, str]:
+    """Reject obviously-wrong fetches so they never reach the frontend.
+
+    Returns (is_valid, reason_if_not).
+    """
+    title = (meta.get("title") or "").strip()
+    if not title or title.lower() == "untitled":
+        return False, "fetched title missing/Untitled"
+
+    # When the user supplied a title, the fetched title must share at least
+    # one significant word (≥ 4 chars after normalization). Catches wrong-book
+    # matches like 'Belle du Seigneur' → 'Un petit sauvage'.
+    user_title = (entry.get("title") or "").strip()
+    if user_title:
+        fetched_words = {w for w in _normalize(title).split() if len(w) >= 4}
+        wanted_words  = {w for w in _normalize(user_title).split() if len(w) >= 4}
+        if wanted_words and not (fetched_words & wanted_words):
+            return False, f"fetched title {title!r} shares no significant word with requested {user_title!r}"
+
+    # When the user supplied an author, last name must appear in the fetched authors.
+    user_author = (entry.get("author") or "").strip()
+    if user_author:
+        last = _normalize(user_author).split()[-1] if _normalize(user_author).split() else ""
+        fetched_authors_norm = " ".join(_normalize(a) for a in (meta.get("authors") or []))
+        if last and last not in fetched_authors_norm:
+            return False, f"fetched authors {meta.get('authors')!r} don't include {user_author!r}"
+
+    return True, ""
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--input", default=str(DEFAULT_INPUT))
@@ -62,7 +99,9 @@ def main() -> int:
     failures: list[dict] = []
     rows: list[dict] = []
 
-    for entry in books:
+    for i, entry in enumerate(books):
+        if i > 0:
+            time.sleep(1.0)  # rate-friendly to Google Books / Open Library
         try:
             meta = fetch_metadata(
                 isbn=isbn_for(entry),
@@ -76,6 +115,13 @@ def main() -> int:
             continue
 
         meta["hints"] = entry.get("hints")
+
+        ok, why = looks_valid(entry, meta)
+        if not ok:
+            n_failed += 1
+            failures.append({"entry": entry, "fetched": {"title": meta.get("title"), "authors": meta.get("authors"), "isbn13": meta.get("isbn13")}, "error": why})
+            print(f"  ✗ rejected: {entry} — {why}", file=sys.stderr)
+            continue
 
         if not args.force_all and not args.dry_run and already_classified(meta["isbn13"]):
             if args.force and args.force != meta["isbn13"]:

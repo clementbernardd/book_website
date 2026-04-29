@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782266195584",
+  "isbn10": "2266195581",
+  "slug": "bonjour-tristesse-sagan",
+  "title": "Bonjour Tristesse",
+  "authors": [
+    "Françoise Sagan"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2010,
+  "publisher": "Presse Pocket",
+  "summary": "Source title: Bonjour Tristesse (French Edition)",
+  "cover": {
+    "src": "https://covers.openlibrary.org/b/isbn/9782266195584-L.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782266195584-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "legerete",
+    "nuance": "legerete",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "vieillesse",
+      "exil"
+    ]
+  },
+  "category": "sapaiser",
+  "subcategory": "legerete",
+  "confidence": 0.014,
+  "classifiedAt": "2026-04-29T19:54:02Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}

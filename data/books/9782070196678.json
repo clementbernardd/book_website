@@ -1,0 +1,32 @@
+{
+  "isbn13": "9782070196678",
+  "isbn10": "2070196674",
+  "slug": "chanson-douce-slimani",
+  "title": "Chanson douce",
+  "authors": [
+    "Leïla Slimani"
+  ],
+  "originalLanguage": null,
+  "publishedYear": 2016,
+  "publisher": null,
+  "summary": "In French.\r\n\r\nPrix Goncourt 2016.",
+  "cover": {
+    "src": "/covers/9782070196678.jpg",
+    "remote": "https://covers.openlibrary.org/b/isbn/9782070196678-L.jpg"
+  },
+  "imprint": {
+    "mainEmotion": "douceur",
+    "nuance": "douceur",
+    "intensity": "modéré",
+    "effect": "apaisant",
+    "context": [
+      "rupture",
+      "solitude"
+    ]
+  },
+  "category": "sapaiser",
+  "subcategory": "douceur",
+  "confidence": 0.0647,
+  "classifiedAt": "2026-04-29T20:00:16Z",
+  "classifiedWith": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+}
